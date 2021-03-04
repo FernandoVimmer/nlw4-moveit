@@ -3,7 +3,6 @@
     max-width: 992px;
     margin: 0 auto;
     padding: 2.5rem 2rem;
-
     display: flex;
     flex-direction: column;
 }
@@ -14,4 +13,19 @@
     grid-template-columns: 1fr 1fr;
     gap: 6.25rem;
     align-content: center;
+}
+
+@media(max-width: 720px) {
+    .container {
+        height: 30vh;
+    }
+
+    .container section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container section div:last-child {
+        margin: 0 0 1vh 0;
+    }
 }
