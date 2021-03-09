@@ -10,6 +10,7 @@ import { ChallengeBox } from "../components/ChallengeBox";
 import styles from '../styles/pages/Home.module.css'
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
+import { SwitchButton } from '../components/SwitchButton';
 
 interface HomeProps {
   level: number;
@@ -32,9 +33,12 @@ export default function Home(props) {
 
         <ExperienceBar />
 
+        <SwitchButton />
+
         <CountdownProvider>
           <section>
             <div>
+            
               <Profile />
               <CompletedChallenges />
               <Countdown />
